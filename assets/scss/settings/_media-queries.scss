@@ -1,0 +1,41 @@
+// Media queries
+@mixin m--desktop {
+    @media only screen and (max-width: 1400px) {
+        @content;
+    }
+}
+@mixin m--laptop {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin m--tablet {
+    @media only screen and (max-width: 990px) {
+        @content;
+    }
+}
+@mixin m--mobile {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin m--sm {
+    @media only screen and (max-width: 576px) {
+        @content;
+    }
+}
+@mixin m--xs {
+    @media only screen and (max-width: 380px) {
+        @content;
+    }
+}
+@mixin m--touchscreen {
+    @media (hover: none) and (pointer: coarse) {
+        @content;
+    }
+}
+@mixin m--not-touchscreen {
+    @media (hover: hover) and (pointer: fine) {
+        @content;
+    }
+}

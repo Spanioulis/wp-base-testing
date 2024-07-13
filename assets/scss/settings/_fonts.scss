@@ -1,0 +1,25 @@
+$ff-gotham: 'Gotham';
+
+$fw-light: 300;
+$fw-regular: normal;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// GOTHAM ------
+@font-face {
+    font-family: $ff-gotham;
+    font-weight: $fw-medium;
+    src: url('../fonts/Gotham-Medium.otf') format('opentype');
+}
+
+// RECOLETA -------
+// @font-face {
+//     font-family: $ff-recoleta;
+//     src: url('../fonts/Recoleta-Light.eot');
+//     src: url('../fonts/Recoleta-Light.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/Recoleta-Light.woff2') format('woff2'), url('../fonts/Recoleta-Light.woff') format('woff'),
+//         url('../fonts/Recoleta-Light.ttf') format('truetype');
+//     font-weight: $fw-light;
+//     font-style: normal;
+//     //font-display: swap;
+// }

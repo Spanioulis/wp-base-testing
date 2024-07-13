@@ -1,0 +1,432 @@
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/frontend.scss ***!
+  \**************************************************************************************************************************************************************/
+@charset "UTF-8";
+@font-face {
+  font-family: "Gotham";
+  font-weight: 500;
+  src: url(../a52599fa8cce74bab773.otf) format("opentype");
+}
+/****************************************************************
+/ Base contains TAGS general styling
+/****************************************************************/
+@view-transition {
+  navigation: auto;
+}
+html {
+  font-family: "Gotham";
+}
+
+body {
+  text-rendering: geometricPrecision;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+@media (hover: none) and (pointer: coarse) {
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/***
+    The new CSS reset - version 1.8.4 (last updated 14.2.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+
+.underline {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: initial;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-underline-offset: 0.12em;
+}
+
+.richtext p,
+.richtext ul,
+.richtext ol {
+  padding-bottom: 1em;
+}
+.richtext ul {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+.richtext ol {
+  list-style-type: decimal;
+  padding-left: 1em;
+}
+.richtext h1,
+.richtext h2,
+.richtext h3,
+.richtext h4,
+.richtext h5,
+.richtext h6 {
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+}
+.richtext a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: initial;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-underline-offset: 0.12em;
+}
+
+.bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-contain {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pt-05 {
+  padding-top: 0.5em;
+}
+
+.pt-1 {
+  padding-top: 1em;
+}
+
+.pt-2 {
+  padding-top: 2em;
+}
+
+.pt-3 {
+  padding-top: 3em;
+}
+
+.pt-4 {
+  padding-top: 4em;
+}
+
+.pt-5 {
+  padding-top: 5em;
+}
+
+.pb-05 {
+  padding-bottom: 0.5em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+
+.pb-2 {
+  padding-bottom: 2em;
+}
+
+.pb-3 {
+  padding-bottom: 3em;
+}
+
+.pb-4 {
+  padding-bottom: 4em;
+}
+
+.pb-5 {
+  padding-bottom: 5em;
+}
+
+.header {
+  background-color: #eeeeee;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px;
+}
+
+.mainmenu {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 3rem;
+  line-height: clamp(16px, 1.428vw, 20px);
+}
+.mainmenu ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+@media only screen and (max-width: 990px) {
+  .mainmenu {
+    background-color: white;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.5s ease;
+    width: 0;
+    z-index: 101;
+  }
+  .mainmenu > * {
+    padding: calc(fluid(110) + 3vw) fluid(20) fluid(20);
+    opacity: 0;
+    transition: all 0.1s ease;
+  }
+  .mainmenu.expanded {
+    background-color: lightcyan;
+    font-size: clamp(15px, 2.5vw, 25px);
+    height: 100vh;
+    padding: 5vw;
+    pointer-events: all;
+    width: 100vw;
+  }
+  .mainmenu.expanded > * {
+    opacity: 1;
+    transition: all 0.4s ease 0.4s;
+  }
+  .mainmenu.expanded ul {
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .mainmenu.expanded ul li {
+    margin: 0.5rem 0;
+  }
+  .mainmenu.expanded ul li a:hover {
+    color: #1a1a1a;
+  }
+}
+
+.btn, .btn--header {
+  background-color: white;
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 0.06rem;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1em;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.btn:hover, .btn--header:hover, .btn:active, .btn--header:active, .btn:focus, .btn--header:focus {
+  background-color: black;
+  color: white;
+}
+
+.btn--header {
+  min-width: 9rem;
+  font-size: 1.9rem;
+  background-color: inherit;
+}
+
+.c-hamburger {
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  height: 4rem;
+  justify-content: center;
+  margin-right: 1rem;
+  position: relative;
+  transition: all 0.2s ease-out;
+  z-index: 102;
+  /* Styling the hamburger lines */
+}
+@media only screen and (max-width: 990px) {
+  .c-hamburger {
+    display: flex;
+  }
+}
+.c-hamburger__line {
+  width: 22px;
+  height: 4px;
+  margin: 0 0 5px 0;
+  background: black;
+  transition: transform 0.5s ease, opacity 0.2s ease;
+}
+.c-hamburger__line:last-of-type {
+  margin-bottom: 0;
+}
+.c-hamburger.expanded .c-hamburger__line {
+  color: black;
+  width: 29px;
+}
+.c-hamburger.expanded .c-hamburger__line:nth-child(1) {
+  transform: rotate(45deg) translate(6.3px, 6.3px);
+}
+.c-hamburger.expanded .c-hamburger__line:nth-child(2) {
+  opacity: 0;
+}
+.c-hamburger.expanded .c-hamburger__line:nth-child(3) {
+  transform: rotate(-45deg) translate(6.3px, -6.3px);
+}
+
+.template-home {
+  padding: 50px;
+}
+.template-home .color-article {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  transition: background-color 0.3s;
+}
+.template-home .orange {
+  background-color: orange;
+}
+.template-home .yellow {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=frontend.min.css.map*/

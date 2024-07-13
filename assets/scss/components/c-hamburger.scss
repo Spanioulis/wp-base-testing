@@ -1,0 +1,47 @@
+.c-hamburger {
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    height: 4rem;
+    justify-content: center;
+    margin-right: 1rem;
+    position: relative;
+    transition: all 0.2s ease-out;
+    z-index: 102;
+
+    @include m--tablet {
+        display: flex;
+    }
+
+    /* Styling the hamburger lines */
+    &__line {
+        width: 22px;
+        height: 4px;
+        margin: 0 0 5px 0;
+        background: black;
+        transition: transform 0.5s ease, opacity 0.2s ease;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    $correction: 6.3px;
+
+    &.expanded {
+        .c-hamburger__line {
+            color: black;
+            width: 29px;
+            &:nth-child(1) {
+                transform: rotate(45deg) translate($correction, $correction);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate($correction, -$correction);
+            }
+        }
+    }
+}
