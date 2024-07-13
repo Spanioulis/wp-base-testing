@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 // change this variable to fit your project
 
-const localDomain = "http://localhost:8888/wp-base/";
+const localDomain = "http://localhost:8888/wp-base-testing/";
 
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
