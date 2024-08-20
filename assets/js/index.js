@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.querySelector(".export-index")) {
     import("./plugins/export-index")
       .then((module) => {
-        if (module && module.hola) {
+        if (module && module.exportIndex) {
           module.exportIndex();
         } else {
           console.error("hola function not found in export-index module.");
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (document.querySelector(".addClass")) {
-    import("./utils/classlist")
+    import("./utils/index")
       .then((module) => {
         if (module && module.addClass && module.removeClass) {
           const elements = document.querySelectorAll(".color-article");

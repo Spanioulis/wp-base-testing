@@ -1,5 +1,5 @@
 export function addClass(elements, classname) {
-  console.log("ClassList");
+  console.log("Se añade clase (+)");
 
   if (elements) {
     var element_list;
@@ -17,6 +17,8 @@ export function addClass(elements, classname) {
 }
 
 export function removeClass(elements, classname) {
+  console.log("Se borra clase (-)");
+
   if (elements) {
     var element_list;
 

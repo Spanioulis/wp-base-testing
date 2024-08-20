@@ -1,6 +1,12 @@
 .template-home {
   padding: 50px;
+  color: navy;
+  // SVG
+  .icon {
+    color: cadetblue;
+  }
 
+  // classlist.js
   .color-article {
     padding: 10px;
     border: 1px solid #ccc;

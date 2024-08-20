@@ -415,6 +415,10 @@ meter {
 
 .template-home {
   padding: 50px;
+  color: navy;
+}
+.template-home .icon {
+  color: cadetblue;
 }
 .template-home .color-article {
   padding: 10px;

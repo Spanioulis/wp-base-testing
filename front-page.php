@@ -3,11 +3,8 @@
 <main class="template-home js-1cp">
     <?php the_content(''); ?>
 
-
-
-
     <!-- classlist.js -->
-    <div class="addClass">
+    <div class="addClass pt-5">
         <div>
             <button class="btn" id="btn-naranja">Naranja</button>
             <button class="btn" id="btn-amarillo">Amarillo</button>
@@ -22,8 +19,15 @@
         </div>
     </div>
 
+
+    <div class="icon">
+        <svg width="100" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" fill="currentColor"/>
+        </svg>
+    </div>
+
     <!--  -->
-    <div class="hola"></div>
+    <div class="export-index pt-5"></div>
 </main>
 
 <?php get_footer(); ?>

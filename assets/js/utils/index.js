@@ -1,4 +1,4 @@
-// export { addClass, removeClass } from './classlist';
+export { addClass, removeClass } from "./classlist";
 // export { debounce } from './debounce';
 // export { getAllUrlParams } from './getUrlParams';
 // export { isVisible } from './isVisible';
