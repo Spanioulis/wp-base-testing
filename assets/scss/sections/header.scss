@@ -1,7 +1,33 @@
 .header {
-    background-color: #eeeeee;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 50px;
+	background-color: #eee;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 50px;
+	left: 0;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+
+#navbar {
+	background-color: #9ef;
+	display: flex;
+	justify-content: space-around;
+	left: 0;
+	padding: 10px 50px;
+	position: sticky;
+	top: 69px;
+	z-index: 5;
+
+	> a {
+		border-radius: 5px;
+		border: 1px solid hsl(0, 0%, 0%);
+		padding: 5px 10px;
+	}
+
+	> a.active {
+		color: hsl(0, 0%, 100%);
+		background-color: hsl(0, 0%, 0% / 90%);
+	}
 }

@@ -279,11 +279,35 @@ meter {
 }
 
 .header {
-  background-color: #eeeeee;
+  background-color: #eee;
   color: black;
   display: flex;
   justify-content: space-between;
   padding: 25px 50px;
+  left: 0;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+#navbar {
+  background-color: #9ef;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  padding: 10px 50px;
+  position: sticky;
+  top: 69px;
+  z-index: 5;
+}
+#navbar > a {
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 0%);
+  padding: 5px 10px;
+}
+#navbar > a.active {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
 }
 
 .mainmenu {
@@ -415,10 +439,13 @@ meter {
 
 .template-home {
   padding: 50px;
-  color: navy;
+}
+.template-home h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 .template-home .icon {
-  color: cadetblue;
+  color: peru;
 }
 .template-home .color-article {
   padding: 10px;
@@ -431,6 +458,28 @@ meter {
 }
 .template-home .yellow {
   background-color: yellow;
+}
+.template-home .s-dialog {
+  margin: 2rem 0rem;
+}
+.template-home .s-dialog button {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+.template-home .s-dialog dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.template-home .s-dialog dialog[open] {
+  scale: 1;
+  transition: scale 0.3s ease-in-out, translate 1s ease;
+}
+@starting-style {
+  .template-home .s-dialog dialog[open] {
+    scale: 0;
+    translate: 0px 100px;
+  }
 }
 
 /*# sourceMappingURL=frontend.min.css.map*/

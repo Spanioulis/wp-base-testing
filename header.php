@@ -13,3 +13,27 @@
         <div class="c-hamburger__line"></div>
     </div>
 </header>
+
+<!-- isVisible.js -->
+<nav class="isVisible" id="navbar">
+    <a href="#addClass" id="link1">Class List</a>
+    <a href="#dialog" id="link2">Dialog</a>
+    <a href="#currentColor" id="link3">Current Color</a>
+</nav>
+
+<script>
+//     function highlightCurrentSection() {
+//         console.log('Cargando Current Section')
+//     const sections = document.querySelectorAll('section');
+//     const navbarLinks = document.querySelectorAll('#navbar a');
+
+//     sections.forEach((section, index) => {
+//         if (isVisible(section)) {
+//             navbarLinks.forEach(link => link.classList.remove('active')); // Remove active class from all links
+//             navbarLinks[index].classList.add('active'); // Add active class to the current link
+//         }
+//     });
+// }
+
+// window.addEventListener('scroll', highlightCurrentSection);
+</script>
